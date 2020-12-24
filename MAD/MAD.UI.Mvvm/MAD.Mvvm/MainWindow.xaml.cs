@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using DevExpress.Xpf.Map;
 
 namespace MAD.Mvvm
 {
@@ -20,9 +21,14 @@ namespace MAD.Mvvm
     /// </summary>
     public partial class MainWindow : ThemedWindow
     {
+                         
         public MainWindow()
         {
             InitializeComponent();
+             
+            //mapControl.ZoomToRegion(new GeoPoint(41, 23), new GeoPoint(35, 29));
         }
+
+        
     }
 }

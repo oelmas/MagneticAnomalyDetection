@@ -8,9 +8,12 @@
     Title="MainWindow" Height="800" Width="1000" TitleAlignment="Center">
     <Grid>
         <Views:MainView/>
-        <dxm:MapControl Name="mapControl" CenterPoint="38,35" ZoomLevel="4">
-           <dxm:ImageLayer Name="ImageLayer">
-                <dxm:BingMapDataProvider Kind="Hybrid" BingKey="Zpdo4h3cv2isttFnrLkR~tk7lR-io2ACfJu04Nq6G4A~AhEsiytOcg2tmLdNLJ94o1TUdXoYkAUers-AMBGrLLsp5WZin-NV9Da4ijhHFae6"></dxm:BingMapDataProvider>
+        <dxm:MapControl Name="mapControl"  CenterPoint="38,35" ZoomLevel="4">
+            <dxm:MapControl.SelectItemsByRegionBehavior>
+                <dxm:SelectItemsByRegionBehavior/>
+            </dxm:MapControl.SelectItemsByRegionBehavior>
+            <dxm:ImageLayer Name="ImageLayer">
+                <dxm:BingMapDataProvider  Kind="Hybrid" BingKey="Zpdo4h3cv2isttFnrLkR~tk7lR-io2ACfJu04Nq6G4A~AhEsiytOcg2tmLdNLJ94o1TUdXoYkAUers-AMBGrLLsp5WZin-NV9Da4ijhHFae6"></dxm:BingMapDataProvider>
            </dxm:ImageLayer>
             <dxm:MapControl.MiniMap>
                 <dxm:MiniMap Alignment="TopRight">
