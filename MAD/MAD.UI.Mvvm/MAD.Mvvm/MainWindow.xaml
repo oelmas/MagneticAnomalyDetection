@@ -1,11 +1,17 @@
-﻿<dx:ThemedWindow 
-    x:Class="MAD.Mvvm.MainWindow"
+﻿<dx:ThemedWindow
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
     xmlns:Views="clr-namespace:MAD.Mvvm.Views"
+    xmlns:dxm="http://schemas.devexpress.com/winfx/2008/xaml/map" 
+    x:Class="MAD.Mvvm.MainWindow"
     Title="MainWindow" Height="800" Width="1000" TitleAlignment="Center">
     <Grid>
         <Views:MainView/>
+        <dxm:MapControl Name="mapControl" CenterPoint="38,35" ZoomLevel="4">
+           <dxm:ImageLayer Name="ImageLayer">
+                <dxm:BingMapDataProvider BingKey="Zpdo4h3cv2isttFnrLkR~tk7lR-io2ACfJu04Nq6G4A~AhEsiytOcg2tmLdNLJ94o1TUdXoYkAUers-AMBGrLLsp5WZin-NV9Da4ijhHFae6"></dxm:BingMapDataProvider>
+           </dxm:ImageLayer>
+        </dxm:MapControl>
     </Grid>
 </dx:ThemedWindow>
